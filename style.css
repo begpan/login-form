@@ -1,0 +1,99 @@
+:root{
+    --color-primary: rgba(50,120,70, .2);
+    --color-secondary-dark: rgba(0,0,0, .5);
+    --color-secondary:rgb(60,60,190);
+    --color-error: rgb(210,40,40);
+    --border-radius: 5px;
+}
+
+body{
+    background: linear-gradient(to right, var(--color-primary),var(--color-secondary-dark)), url(img/software-nedir.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    background-color: #fff;
+    width: 400px;
+    max-height: 500px;
+    position: absolute;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px red;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+
+
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+     */
+
+
+.form-title{
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.form-input-group{
+    background-color: antiquewhite;
+    margin: 1rem;
+}
+
+.form-input{
+    width: 100%;
+    padding: .7rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: 2px solid #ddd;
+    background-color: #eee;
+    transition: background .3s border-color .3s;
+}
+
+.form-input:hover{
+    border-color: var(--color-primary);
+    background-color: #fff;
+}
+
+.form-button{
+    
+    padding: 1rem 2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary);
+    margin-top: 1rem
+
+}
+
+.form-button:hover{
+    background-color: var(--color-secondary-dark);
+}
+
+.form-link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor:pointer;
+    transition: .3sn;
+}
+
+.form-link:hover{
+    text-decoration: underline;
+    
+}
+
+.container, .form-input, .form-button{
+    font: 500 1rem 'Roboto';
+}
