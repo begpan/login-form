@@ -3,5 +3,5 @@
 
 <h2>Screen Gif</h2>
 
-![](login forms.gif)
+![](/login%20forms.gif)
 
